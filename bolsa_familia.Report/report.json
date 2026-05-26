@@ -1,0 +1,80 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"visibility\":0}",
+      "displayName": "visão geral",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "295210c15f03134b4b9f",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0d0b5e3b8827804d3067\",\"layouts\":[{\"id\":0,\"position\":{\"x\":36.13267466478476,\"y\":36.13267466478476,\"z\":0,\"width\":333.3239237826394,\"height\":146.33733239237827,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(fato_bolsa_familia.NIS FAVORECIDO)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"NIS FAVORECIDO\"}},\"Function\":2},\"Name\":\"Sum(fato_bolsa_familia.NIS FAVORECIDO)\",\"NativeReferenceName\":\"Contagem de NIS FAVORECIDO1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"NIS FAVORECIDO\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 146.34,
+          "width": 333.32,
+          "x": 36.13,
+          "y": 36.13,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"27d104d51aab50f5c4c5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":565.9701492537313,\"y\":42.08955223880597,\"z\":2,\"width\":195.22388059701493,\"height\":120.8955223880597,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 120.90,
+          "width": 195.22,
+          "x": 565.97,
+          "y": 42.09,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"836ff36b66bbeee722c1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":846.2686567164179,\"y\":42.08955223880597,\"z\":3,\"width\":216.71641791044775,\"height\":120.8955223880597,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 120.90,
+          "width": 216.72,
+          "x": 846.27,
+          "y": 42.09,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"c3a4e650e2b42ac5c720\",\"layouts\":[{\"id\":0,\"position\":{\"x\":36.13267466478476,\"y\":194.2131263232181,\"z\":1,\"width\":204.14961185603389,\"height\":120.14114326040932,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 120.14,
+          "width": 204.15,
+          "x": 36.13,
+          "y": 194.21,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "região/estado",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "88ab6d1ac383c774ffbb",
+      "ordinal": 1,
+      "visualContainers": [],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "bolsa_familia"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "361f8810-ee48-4b04-b1eb-95055c152a23"
+  }
+}
