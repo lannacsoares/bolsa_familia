@@ -1,0 +1,7 @@
+role Gestor_Sudeste
+	modelPermission: read
+
+	tablePermission dim_regioes = [Regiao] == "Sudeste"
+
+	annotation PBI_Id = a4ba7d5fb7cd41f4b8af3c791f6ea0e8
+

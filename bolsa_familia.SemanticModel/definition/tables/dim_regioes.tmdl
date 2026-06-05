@@ -1,0 +1,59 @@
+table dim_regioes
+	lineageTag: 77bd2eb4-11f9-4298-8fe4-e6ce013bbf56
+
+	column Regiao
+		lineageTag: dcc841af-a299-4760-b72e-40ae53c784f0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Regiao]
+
+		annotation SummarizationSetBy = Automatic
+
+	column UF
+		lineageTag: 947388de-a68f-4133-917c-fd7b1d694a42
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [UF]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_regioes = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Regiao", STRING,
+				    "UF", STRING,
+				    {
+				        {"Norte", "AC"},
+				        {"Norte", "AM"},
+				        {"Norte", "AP"},
+				        {"Norte", "PA"},
+				        {"Norte", "RO"},
+				        {"Norte", "RR"},
+				        {"Norte", "TO"},
+				        {"Nordeste", "AL"},
+				        {"Nordeste", "BA"},
+				        {"Nordeste", "CE"},
+				        {"Nordeste", "MA"},
+				        {"Nordeste", "PB"},
+				        {"Nordeste", "PE"},
+				        {"Nordeste", "PI"},
+				        {"Nordeste", "RN"},
+				        {"Nordeste", "SE"},
+				        {"Centro-Oeste", "DF"},
+				        {"Centro-Oeste", "GO"},
+				        {"Centro-Oeste", "MS"},
+				        {"Centro-Oeste", "MT"},
+				        {"Sudeste", "ES"},
+				        {"Sudeste", "MG"},
+				        {"Sudeste", "RJ"},
+				        {"Sudeste", "SP"},
+				        {"Sul", "PR"},
+				        {"Sul", "RS"},
+				        {"Sul", "SC"}
+				    }
+				)
+
+	annotation PBI_Id = a3abf1a5bd554cc5971f3d33573b93fa
+

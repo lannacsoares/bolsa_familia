@@ -1,0 +1,7 @@
+role Gestor_Norte
+	modelPermission: read
+
+	tablePermission dim_regioes = [Regiao] == "Norte"
+
+	annotation PBI_Id = 38e05eecec05463aa66138e457cec525
+

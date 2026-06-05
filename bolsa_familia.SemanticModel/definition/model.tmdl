@@ -1,0 +1,29 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["fato_bolsa_familia"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table fato_bolsa_familia
+ref table DateTableTemplate_4e42c0c4-ac8b-4b28-ac57-881845e69d70
+ref table dim_usuarios_rls
+ref table dim_regioes
+
+ref role Admin
+ref role Gestor_Norte
+ref role Gestor_Nordeste
+ref role Gestor_CentroOeste
+ref role Gestor_Sudeste
+ref role Gestor_Sul
+ref role Gestor_Regional_Dinamico
+
+ref cultureInfo pt-BR
+

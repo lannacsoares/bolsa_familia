@@ -1,0 +1,37 @@
+table dim_usuarios_rls
+	lineageTag: eebe675d-be3b-496f-bd80-6128696f11e1
+
+	column email_usuario
+		lineageTag: f3f618f5-3440-4101-b327-9102f68ce641
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [email_usuario]
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao_permitida
+		lineageTag: 59ea1eb6-2b25-41e0-b002-9383a30cafda
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [regiao_permitida]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_usuarios_rls = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "email_usuario", STRING,
+				    "regiao_permitida", STRING,
+				    {
+				        {"gestor.norte@ministerio.br", "Norte"},
+				        {"gestor.nordeste@ministerio.br", "Nordeste"},
+				        {"gestor.centroeste@ministerio.br", "Centro-Oeste"},
+				        {"gestor.sudeste@ministerio.br", "Sudeste"},
+				        {"gestor.sul@ministerio.br", "Sul"}
+				    }
+				)
+
+	annotation PBI_Id = bb1f2fb585a74e108f9e2abf90358ad6
+

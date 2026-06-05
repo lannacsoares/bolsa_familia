@@ -1,0 +1,116 @@
+table fato_bolsa_familia
+	lineageTag: 7965e709-2ea7-4335-9848-dd9cdb4d4dbe
+
+	measure 'Top 10 Repasse Municípios' = ```
+			
+			VAR RankingMunicipio = 
+			    RANKX(
+			        ALL('fato_bolsa_familia'[NOME MUNICÍPIO]), 
+			        CALCULATE(SUM('fato_bolsa_familia'[VALOR PARCELA])), 
+			        , 
+			        DESC
+			    )
+			RETURN
+			    IF(
+			        RankingMunicipio <= 10, 
+			        SUM('fato_bolsa_familia'[VALOR PARCELA]), 
+			        BLANK()
+			    )
+			```
+		formatString: 0
+		lineageTag: 9c454891-ce2e-4627-96ff-0384d289eb8d
+
+	column UF
+		dataType: string
+		lineageTag: 5535c43d-549d-4030-a872-5c88e9846b20
+		summarizeBy: none
+		sourceColumn: UF
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CÓDIGO MUNICÍPIO SIAFI'
+		dataType: int64
+		formatString: 0
+		lineageTag: 57a45031-fdfc-49c6-8ecb-cab8cdfc5047
+		summarizeBy: sum
+		sourceColumn: CÓDIGO MUNICÍPIO SIAFI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOME MUNICÍPIO'
+		dataType: string
+		lineageTag: 5f3fdac3-b960-479e-b750-c76290d841f5
+		summarizeBy: none
+		sourceColumn: NOME MUNICÍPIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CPF FAVORECIDO'
+		dataType: string
+		lineageTag: 682b6bde-90ba-46b7-9dda-4a2cb4b774a2
+		summarizeBy: none
+		sourceColumn: CPF FAVORECIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NIS FAVORECIDO'
+		dataType: int64
+		formatString: 0
+		lineageTag: 66854632-71d2-46dc-a3a2-2a59e09c3837
+		summarizeBy: sum
+		sourceColumn: NIS FAVORECIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOME FAVORECIDO'
+		dataType: string
+		lineageTag: cd94c85a-0526-4318-81b3-c1b03d5dcc5a
+		summarizeBy: none
+		sourceColumn: NOME FAVORECIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VALOR PARCELA'
+		dataType: int64
+		formatString: 0
+		lineageTag: ca65e0d1-3a90-4b15-927b-584da42442d5
+		summarizeBy: sum
+		sourceColumn: VALOR PARCELA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANO
+		dataType: string
+		lineageTag: 3ca09247-f7d9-4e01-8e9b-14c5d1fca32a
+		summarizeBy: none
+		sourceColumn: ANO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MÊS
+		dataType: string
+		lineageTag: 506cc89b-bda5-4296-953b-23cbe2663921
+		summarizeBy: none
+		sourceColumn: MÊS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_bolsa_familia = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\lanna.soares\Downloads\amostra_bolsa.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"MÊS COMPETÊNCIA", Int64.Type}, {"UF", type text}, {"CÓDIGO MUNICÍPIO SIAFI", Int64.Type}, {"NOME MUNICÍPIO", type text}, {"CPF FAVORECIDO", type text}, {"NIS FAVORECIDO", Int64.Type}, {"NOME FAVORECIDO", type text}, {"VALOR PARCELA", Int64.Type}}),
+				    #"Texto Inserido Antes do Delimitador" = Table.AddColumn(#"Tipo Alterado", "Texto Antes do Delimitador", each Text.BeforeDelimiter(Text.From([MÊS COMPETÊNCIA], "pt-BR"), "0", 1), type text),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Texto Inserido Antes do Delimitador",{{"Texto Antes do Delimitador", "ANO"}}),
+				    #"Texto Inserido Após o Delimitador" = Table.AddColumn(#"Colunas Renomeadas", "Texto Após o Delimitador", each Text.AfterDelimiter(Text.From([MÊS COMPETÊNCIA], "pt-BR"), "6"), type text),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Texto Inserido Após o Delimitador",{{"Texto Após o Delimitador", "MÊS"}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Colunas Renomeadas1",{"MÊS COMPETÊNCIA"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

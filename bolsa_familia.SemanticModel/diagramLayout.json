@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 924,
-            "y": 213
+            "x": 560.72100524772907,
+            "y": 429.20756781104012
           },
           "nodeIndex": "dim_usuarios_rls",
           "nodeLineageTag": "eebe675d-be3b-496f-bd80-6128696f11e1",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 102,
-            "y": 41
+            "x": 109.54212445852465,
+            "y": 0
           },
           "nodeIndex": "fato_bolsa_familia",
           "nodeLineageTag": "7965e709-2ea7-4335-9848-dd9cdb4d4dbe",
@@ -49,7 +49,7 @@
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 100,
+      "zoomValue": 79.553182037699813,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

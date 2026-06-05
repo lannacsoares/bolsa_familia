@@ -1,0 +1,8 @@
+relationship 75ebdfa3-75e9-96fa-fe8c-85fdc0ee7394
+	fromColumn: fato_bolsa_familia.UF
+	toColumn: dim_regioes.UF
+
+relationship 494a6785-2828-d127-2c36-cee1b6747663
+	fromColumn: dim_regioes.Regiao
+	toColumn: dim_usuarios_rls.regiao_permitida
+

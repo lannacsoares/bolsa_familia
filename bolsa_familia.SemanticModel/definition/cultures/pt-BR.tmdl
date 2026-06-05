@@ -1,0 +1,801 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "fato_bolsa_familia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fato bolsa familia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fato_bolsa_familia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "UF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "uf": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.código_município_siafi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "CÓDIGO MUNICÍPIO SIAFI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "código município siafi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.nome_município": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "NOME MUNICÍPIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome município": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.cpf_favorecido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "CPF FAVORECIDO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cpf favorecido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.nis_favorecido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "NIS FAVORECIDO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nis favorecido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ni favorecido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.nome_favorecido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "NOME FAVORECIDO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome favorecido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.valor_parcela": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "VALOR PARCELA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor parcela": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "ANO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_bolsa_familia",
+			          "ConceptualProperty": "MÊS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Mês": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_usuarios_rl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_usuarios_rls"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim usuarios rl": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim usuario rl": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "dim_usuarios_rls": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_usuarios_rl.email_usuario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_usuarios_rls",
+			          "ConceptualProperty": "email_usuario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "email usuario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "email_usuario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_usuarios_rl.regiao_permitida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_usuarios_rls",
+			          "ConceptualProperty": "regiao_permitida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "regiao permitida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "regiao_permitida": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_regioe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_regioes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim regioe": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_regioes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_regioe.regiao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_regioes",
+			          "ConceptualProperty": "Regiao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "regiao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Região": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_regioe.uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_regioes",
+			          "ConceptualProperty": "UF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "uf": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dim_regioe_has_dim_usuarios_rl": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_regioes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_regioe": {
+			          "Target": {
+			            "Entity": "dim_regioe"
+			          }
+			        },
+			        "dim_usuarios_rl": {
+			          "Target": {
+			            "Entity": "dim_usuarios_rl"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_regioe"
+			            },
+			            "Object": {
+			              "Role": "dim_usuarios_rl"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regioes_have_dim_usuarios_rls"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_usuarios_rl"
+			            },
+			            "Object": {
+			              "Role": "dim_regioe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_usuarios_rls_have_dim_regioes"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_dim_regioe": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "dim_regioe": {
+			          "Target": {
+			            "Entity": "dim_regioe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "dim_regioe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_dim_regioes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_regioe"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regioes_have_fato_bolsa_familias"
+			        }
+			      ]
+			    },
+			    "dim_regioe_has_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_regioes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_regioe": {
+			          "Target": {
+			            "Entity": "dim_regioe"
+			          }
+			        },
+			        "dim_regioe.uf": {
+			          "Target": {
+			            "Entity": "dim_regioe.uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_regioe"
+			            },
+			            "Object": {
+			              "Role": "dim_regioe.uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regioes_have_ufs"
+			        }
+			      ]
+			    },
+			    "dim_usuarios_rl_has_regiao_permitida": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_usuarios_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_usuarios_rl": {
+			          "Target": {
+			            "Entity": "dim_usuarios_rl"
+			          }
+			        },
+			        "dim_usuarios_rl.regiao_permitida": {
+			          "Target": {
+			            "Entity": "dim_usuarios_rl.regiao_permitida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_usuarios_rl"
+			            },
+			            "Object": {
+			              "Role": "dim_usuarios_rl.regiao_permitida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_usuarios_rls_have_regiao_permitidas"
+			        }
+			      ]
+			    },
+			    "dim_usuarios_rl_has_email_usuario": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_usuarios_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_usuarios_rl": {
+			          "Target": {
+			            "Entity": "dim_usuarios_rl"
+			          }
+			        },
+			        "dim_usuarios_rl.email_usuario": {
+			          "Target": {
+			            "Entity": "dim_usuarios_rl.email_usuario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_usuarios_rl"
+			            },
+			            "Object": {
+			              "Role": "dim_usuarios_rl.email_usuario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_usuarios_rls_have_email_usuarios"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.mê": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_mê"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.ano": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_anos"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_valor_parcela": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.valor_parcela": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.valor_parcela"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.valor_parcela"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_valor_parcelas"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_nome_favorecido": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.nome_favorecido": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.nome_favorecido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.nome_favorecido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_nome_favorecidos"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_nis_favorecido": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.nis_favorecido": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.nis_favorecido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.nis_favorecido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_nis_favorecidos"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_cpf_favorecido": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.cpf_favorecido": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.cpf_favorecido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.cpf_favorecido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_cpf_favorecidos"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_nome_município": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.nome_município": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.nome_município"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.nome_município"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_nome_municípios"
+			        }
+			      ]
+			    },
+			    "fato_bolsa_familia_has_código_município_siafi": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_bolsa_familia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_bolsa_familia": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia"
+			          }
+			        },
+			        "fato_bolsa_familia.código_município_siafi": {
+			          "Target": {
+			            "Entity": "fato_bolsa_familia.código_município_siafi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_bolsa_familia"
+			            },
+			            "Object": {
+			              "Role": "fato_bolsa_familia.código_município_siafi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_bolsa_familias_have_código_município_siafis"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+
