@@ -22,6 +22,23 @@ A solução foi desenvolvida em **Python**, utilizando bibliotecas consolidadas 
 * **Matplotlib / Seaborn:** Para a construção de gráficos e visualizações estatísticas.
 * **Jupyter Notebook:** Como ambiente de desenvolvimento para a análise exploratória.
 
+## Modelagem de Dados e Arquitetura
+
+O modelo analítico foi estruturado seguindo as melhores práticas de modelagem dimensional (Star Schema), conforme ilustrado na arquitetura relacional do projeto (referência: `image_6eb55a.png`).
+
+### Tabelas do Modelo
+
+* **`fato_bolsa_familia`**: Concentra os dados transacionais e métricas de repasses históricos. Contém chaves e atributos como `ANO`, `MÊS`, `VALOR PARCELA`, além de dados cadastrais anonimizados/identificadores do favorecido (`CPF FAVORECIDO`, `NIS FAVORECIDO`, `NOME FAVORECIDO`).
+* **`dim_regioes`**: Tabela dimensional contendo os atributos geográficos `UF` e `Regiao`, utilizada para realizar o particionamento e a granularidade espacial das análises.
+* **`dim_usuarios_rls`**: Tabela de governança responsável pelo mapeamento de segurança, relacionando o `email_usuario` à sua respectiva `regiao_permitida`.
+
+### Relacionamentos e Governança (RLS)
+
+* **`dim_regioes` $\rightarrow$ `fato_bolsa_familia`**: Relacionamento de **1 para Muitos (1:*)** baseado no campo `UF`. A tabela de dimensões filtra a tabela de fatos para consolidação dos indicadores regionais.
+* **`dim_usuarios_rls` $\rightarrow$ `dim_regioes`**: Relacionamento de **1 para Muitos (1:*)** configurado com **filtro bidirecional**. Esta estrutura implementa a segurança baseada em Row-Level Security (RLS). Ao validar o e-mail do usuário conectado, o modelo restringe dinamicamente as regiões visíveis na tabela `dim_regioes`, propagando o filtro para a tabela `fato_bolsa_familia` e garantindo que o usuário acesse estritamente os dados autorizados para a sua respectiva região.
+
+<img width="645" height="617" alt="image" src="https://github.com/user-attachments/assets/2f582cab-e4f2-41a5-8716-c57807336974" />
+
 ## Instruções para Execução
 
 ### Pré-requisitos
