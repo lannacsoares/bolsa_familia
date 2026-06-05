@@ -1,9 +1,0 @@
-role Gestor_Regional_Dinamico
-	modelPermission: read
-
-	tablePermission dim_usuarios_rls = [email_usuario] = USERPRINCIPALNAME()
-
-	tablePermission dim_regioes
-
-	annotation PBI_Id = ae409fd19f3449809236c92daa522046
-

@@ -23,7 +23,6 @@ ref role Gestor_Nordeste
 ref role Gestor_CentroOeste
 ref role Gestor_Sudeste
 ref role Gestor_Sul
-ref role Gestor_Regional_Dinamico
 
 ref cultureInfo pt-BR
 
